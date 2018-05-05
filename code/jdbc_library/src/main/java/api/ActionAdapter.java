@@ -4,9 +4,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-/**
- * Adapter which is covering {@link Action} interface and allow to not override whole method list
- */
 public abstract class ActionAdapter implements Action {
 
     public ActionAdapter() {

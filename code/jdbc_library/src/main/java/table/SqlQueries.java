@@ -3,11 +3,6 @@ package table;
 
 import model.BaseModel;
 
-/**
- * Interface used for base db queries
- *
- * @param <T> BaseModel details object
- */
 public interface SqlQueries<T extends BaseModel> {
 
     String getCreateTableQuery();

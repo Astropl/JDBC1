@@ -3,9 +3,6 @@ package api;
 
 import java.sql.ResultSet;
 
-/**
- * Base execution interface used for data operation
- */
 public interface Executor {
 
     void execute(Action action);

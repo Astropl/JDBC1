@@ -1,6 +1,6 @@
 package model;
 
-public abstract class BaseModel {
+public abstract class BaseModel{
     protected String id;
 
     public BaseModel(String id) {
