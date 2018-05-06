@@ -7,12 +7,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class PostgreSQLService implements JDBCService {
+public class MySQLService implements JDBCService {
 
     private Config config;
     private Connection connection = null;
 
-    public PostgreSQLService(Config config) {
+    public MySQLService(Config config) {
         this.config = config;
     }
 

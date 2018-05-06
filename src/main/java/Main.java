@@ -5,7 +5,8 @@ import model.Author;
 import model.Book;
 import model.BookType;
 import service.JDBCService;
-import service.PostgreSQLService;
+import service.MySQLService;
+
 import table.AuthorsManager;
 import table.BooksManager;
 import table.DataManager;
@@ -15,8 +16,8 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Config config = new Config("library", "jdbc:postgresql://localhost/library", "pbrzozowski", "pbrzozowski");
-        JDBCService dbService = new PostgreSQLService(config);
+        Config config = new Config("library", "jdbc:mysql://localhost/library", "root", "Dubhe111");
+        JDBCService dbService = new MySQLService(config);
         Executor executor = new DBExecutor(dbService);
         DataManager<Author> authorManager = new AuthorsManager(config, executor, null);
         DataManager<Book> bookManager = new BooksManager(config, executor, null);
